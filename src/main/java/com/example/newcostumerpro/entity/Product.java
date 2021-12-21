@@ -18,7 +18,6 @@ import javax.persistence.Id;
 public class Product {
 
     @Id
-    @GeneratedValue
     private int pid;
     private String productName;
     private String qty;
