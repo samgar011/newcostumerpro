@@ -16,7 +16,20 @@ public class TableContent {
     private String value;
     @Column
     private String type;
+    @Column
+    private String description;
 
+    public TableContent(String s, String s1, String new_type, String aciklama_yok) {
+
+    }
+
+    public TableContent(Long id, String name, String value, String type, String description) {
+        this.id = id;
+        this.name = name;
+        this.value = value;
+        this.type = type;
+        this.description = description;
+    }
 
     public Long getId() {
         return id;
@@ -43,20 +56,22 @@ public class TableContent {
     }
 
     public String getType() {
+
         return type;
     }
 
     public void setType(String type) {
+
         this.type = type;
     }
 
-    @Override
-    public String toString() {
-        return "TableContent{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", value='" + value + '\'' +
-                ", type='" + type + '\'' +
-                '}';
+
+    public String getDescription() {
+        return description;
     }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
 }
