@@ -16,9 +16,9 @@ public class CostumerController {
     public List <TableContent> CostumerAll(){
 
         return Arrays.asList(
-                new TableContent("pake 1","200", "new type", "aciklama yok" ),
-                new TableContent("pake 1","200", "new type", "aciklama yok" ),
-                new TableContent("pake 1","200", "new type", "aciklama yok" )
+                new TableContent("pake 1","200", "new type 1", "aciklama yok" ),
+                new TableContent("pake 2","300", "new type 2", "aciklama yok" ),
+                new TableContent("pake 2","400", "new type 3", "aciklama yok" )
         );
     }
 
