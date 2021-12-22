@@ -2,6 +2,7 @@ package com.example.newcostumerpro.controller;
 
 
 import com.example.newcostumerpro.dto.OrderRequest;
+import com.example.newcostumerpro.dto.OrderResponse;
 import com.example.newcostumerpro.entity.Costumer;
 import com.example.newcostumerpro.repositories.CostumerRepo;
 import com.example.newcostumerpro.repositories.ProductRepo;
@@ -32,4 +33,9 @@ public class OrderController {
     public List<Costumer>findAllOrders(){
         return costumerRepo.findAll();
     }
+    @GetMapping("/getInfo")
+    public List<OrderResponse>getJoinInformation(){
+        return costumerRepo.getJoinInformation();
+    }
+
 }
